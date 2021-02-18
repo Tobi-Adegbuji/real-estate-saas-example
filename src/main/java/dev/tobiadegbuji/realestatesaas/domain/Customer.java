@@ -1,10 +1,7 @@
 package dev.tobiadegbuji.realestatesaas.domain;
 
 import dev.tobiadegbuji.realestatesaas.enums.ContactMethodEnum;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -13,6 +10,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Setter
+@Builder
 @Entity
 public class Customer extends User {
 
