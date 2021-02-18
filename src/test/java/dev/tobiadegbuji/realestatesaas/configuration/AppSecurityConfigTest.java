@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.runner.ApplicationContextRunner;
 import org.springframework.context.ApplicationContext;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -26,6 +27,9 @@ class AppSecurityConfigTest {
     @Test
     void passwordEncoder() {
         //Running the context and asserting there is a single bean in the app context
-        applicationContext.run(ctx -> assertTrue(ctx.containsBean("passwordEncoder")));
+        applicationContext.run(ctx -> {
+            assertTrue(ctx.containsBean("passwordEncoder"));
+            assertFalse(ctx.containsBean("nonExistentBean"));
+        });
     }
 }
