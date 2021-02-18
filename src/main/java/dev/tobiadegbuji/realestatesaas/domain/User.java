@@ -20,6 +20,9 @@ public class User extends BaseEntity{
 
     private String password;
 
+    @Column(length = 10)
+    private String phoneNumber;
+
     private String streetAddress;
 
     private String suite_apt_number;
