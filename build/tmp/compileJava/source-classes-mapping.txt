@@ -1,0 +1,10 @@
+dev/tobiadegbuji/realestatesaas/domain/BaseEntity.java
+ dev.tobiadegbuji.realestatesaas.domain.BaseEntity
+dev/tobiadegbuji/realestatesaas/domain/User.java
+ dev.tobiadegbuji.realestatesaas.domain.User
+dev/tobiadegbuji/realestatesaas/enums/StateEnum.java
+ dev.tobiadegbuji.realestatesaas.enums.StateEnum
+dev/tobiadegbuji/realestatesaas/RealEstateSaasApplication.java
+ dev.tobiadegbuji.realestatesaas.RealEstateSaasApplication
+dev/tobiadegbuji/realestatesaas/configuration/AppSecurityConfig.java
+ dev.tobiadegbuji.realestatesaas.configuration.AppSecurityConfig

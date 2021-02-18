@@ -1,0 +1,37 @@
+package dev.tobiadegbuji.realestatesaas.domain;
+
+import dev.tobiadegbuji.realestatesaas.enums.StateEnum;
+
+import javax.persistence.Column;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.MappedSuperclass;
+
+@MappedSuperclass
+public class User extends BaseEntity{
+
+    private String firstName;
+
+    private String lastName;
+
+    private String email;
+
+    private String username;
+
+    private String password;
+
+    private String streetAddress;
+
+    private String suite_apt_number;
+
+    private String city;
+
+    @Enumerated(EnumType.STRING)
+    private StateEnum state;
+
+    //Numbers don't have leading zeros.
+    // The presence of meaningful leading zeros on ZIP codes is yet another proof that they're not numeric.
+    @Column(length = 5)
+    private String zipcode;
+
+}
