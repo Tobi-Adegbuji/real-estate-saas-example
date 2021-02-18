@@ -8,10 +8,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.Version;
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.UUID;
 
@@ -23,6 +20,7 @@ import java.util.UUID;
 @MappedSuperclass
 public class BaseEntity {
 
+    @Id
     @GeneratedValue(generator = "UUID")
     //Created UUID generator. Generator creates a random UUID
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
