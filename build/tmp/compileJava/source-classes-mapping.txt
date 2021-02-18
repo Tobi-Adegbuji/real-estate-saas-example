@@ -1,10 +1,28 @@
-dev/tobiadegbuji/realestatesaas/domain/BaseEntity.java
- dev.tobiadegbuji.realestatesaas.domain.BaseEntity
+dev/tobiadegbuji/realestatesaas/mapper/CustomerMapper.java
+ dev.tobiadegbuji.realestatesaas.mapper.CustomerMapper
+dev/tobiadegbuji/realestatesaas/domain/Customer.java
+ dev.tobiadegbuji.realestatesaas.domain.Customer
+dev/tobiadegbuji/realestatesaas/enums/ContactMethodEnum.java
+ dev.tobiadegbuji.realestatesaas.enums.ContactMethodEnum
 dev/tobiadegbuji/realestatesaas/domain/User.java
  dev.tobiadegbuji.realestatesaas.domain.User
 dev/tobiadegbuji/realestatesaas/enums/StateEnum.java
  dev.tobiadegbuji.realestatesaas.enums.StateEnum
-dev/tobiadegbuji/realestatesaas/RealEstateSaasApplication.java
- dev.tobiadegbuji.realestatesaas.RealEstateSaasApplication
 dev/tobiadegbuji/realestatesaas/configuration/AppSecurityConfig.java
  dev.tobiadegbuji.realestatesaas.configuration.AppSecurityConfig
+dev/tobiadegbuji/realestatesaas/domain/CustomerContact.java
+ dev.tobiadegbuji.realestatesaas.domain.CustomerContact
+dev/tobiadegbuji/realestatesaas/service/CustomerServiceImpl.java
+ dev.tobiadegbuji.realestatesaas.service.CustomerServiceImpl
+dev/tobiadegbuji/realestatesaas/repositories/CustomerContactRepo.java
+ dev.tobiadegbuji.realestatesaas.repositories.CustomerContactRepo
+dev/tobiadegbuji/realestatesaas/service/CustomerService.java
+ dev.tobiadegbuji.realestatesaas.service.CustomerService
+dev/tobiadegbuji/realestatesaas/domain/BaseEntity.java
+ dev.tobiadegbuji.realestatesaas.domain.BaseEntity
+dev/tobiadegbuji/realestatesaas/repositories/CustomerRepo.java
+ dev.tobiadegbuji.realestatesaas.repositories.CustomerRepo
+dev/tobiadegbuji/realestatesaas/RealEstateSaasApplication.java
+ dev.tobiadegbuji.realestatesaas.RealEstateSaasApplication
+dev/tobiadegbuji/realestatesaas/dto/CustomerData.java
+ dev.tobiadegbuji.realestatesaas.dto.CustomerData

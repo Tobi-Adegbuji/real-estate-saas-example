@@ -1,13 +1,22 @@
 package dev.tobiadegbuji.realestatesaas.domain;
 
 import dev.tobiadegbuji.realestatesaas.enums.StateEnum;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.MappedSuperclass;
 
+
 @MappedSuperclass
+@Getter
+@Setter
+@NoArgsConstructor
+@Builder
 public class User extends BaseEntity{
 
     private String firstName;
@@ -19,6 +28,9 @@ public class User extends BaseEntity{
     private String username;
 
     private String password;
+
+    @Column(length = 10)
+    private String phoneNumber;
 
     private String streetAddress;
 
